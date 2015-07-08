@@ -49,7 +49,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-    .state('app.playlists', {
+   .state('app.playlists', {
       url: "/playlists",
       views: {
         'menuContent': {
@@ -58,7 +58,14 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-
+   .state('app.events', {
+    url: "/events",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/events.html"
+      }
+    }
+  })
   .state('app.single', {
     url: "/playlists/:playlistId",
     views: {
